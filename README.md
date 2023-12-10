@@ -6,6 +6,9 @@ This project aims to facilitate resume matching based on user queries. It compri
 ## Team Details
 - Poorv Kumar (S20210010178)
 
+## Dataset Used  
+- [Dataset link](https://www.kaggle.com/datasets/gauravduttakiit/resume-dataset)
+
 ## Components
 
 ### Frontend (React)
@@ -33,8 +36,13 @@ This project aims to facilitate resume matching based on user queries. It compri
 - Upon receiving a POST request to `/resume/` with a query, the backend utilizes the inverted index to calculate BM25 scores for the resumes.
 - The top 10 relevant resumes based on the query are returned as a response to the frontend.
 
-## Dataset Used  
-- [Dataset link](https://www.kaggle.com/datasets/gauravduttakiit/resume-dataset)
+### Refining Search
+- Implemented filter options to refine search results based on various parameters such as experience, skills, education, etc.
+  - *Description:* Users can narrow down search results by applying filters like experience level, specific skills, education background, etc., providing more targeted and relevant resume matches.
+
+### Feedback Capture
+- Incorporated a feedback mechanism to capture user inputs on search results, improving system performance and relevance.
+  - *Description:* Users can provide feedback on the relevance and accuracy of the displayed resumes, aiding in system enhancement and future search accuracy.
 
 ## Steps to Run
 
